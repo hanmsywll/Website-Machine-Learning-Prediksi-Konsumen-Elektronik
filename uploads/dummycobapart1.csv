@@ -1,0 +1,6 @@
+ProductID,ProductCategory,ProductBrand,ProductPrice,CustomerAge,CustomerGender,PurchaseFrequency,CustomerSatisfaction,PurchaseIntent
+5874,Smartphones,Other Brands,312.9496681,18,0,2,1,0
+5875,Smart Watches,Samsung,980.3894043,35,1,7,2,1
+5876,Tablets,Samsung,2606.718293,63,0,1,5,1
+5877,Smartphones,Samsung,870.3954502,63,1,10,3,1
+5878,Tablets,Sony,1798.955875,57,0,17,3,0

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unggah Data Penjualan Elektronik</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #fff5e6, #ffe5cc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .upload-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #ff6600;
+        }
+        p {
+            margin-bottom: 2rem;
+            color: #666666;
+        }
+        .btn-upload {
+            width: 100%;
+            background-color: #ff6600;
+            border-color: #ff6600;
+            border-radius: 50px; /* Membuat tombol menjadi bulat */
+        }
+        .btn-upload:hover {
+            background-color: #e65c00;
+            border-color: #e65c00;
+        }
+        .footer {
+            margin-top: 2rem;
+            color: #666666;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Unggah File CSV Anda</h1>
+        <p>Bantu kami memahami preferensi konsumen terhadap produk elektronik. Unggah file CSV Anda yang berisi data penjualan untuk berkontribusi pada analisis kami.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" name="file" class="form-control">
+            </div>
+            <div>
+                <input type="submit" value="Unggah" class="btn btn-primary btn-upload">
+            </div>
+        </form>
+        <div class="footer">
+            <p>Data Anda membantu kami meningkatkan penawaran elektronik kami dan lebih melayani pelanggan kami. Terima kasih atas kontribusi Anda!</p>
+        </div>
+    </div>
+    <!-- Bootstrap JS dan dependensi (opsional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
